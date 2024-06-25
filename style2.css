@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #212121;
+}
+
+h1{
+    color: white;
+}
+
+.estrutura{
+    width: 350px;
+    height: 150px;
+    background-color: #4d4d4d;
+    border-radius: 150px;
+    position: relative;
+}
+
+.estrutura .indicador{
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border-radius: 50%;
+    transform: scale(.9);
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    transition: .5s;
+}
+
+.estrutura.inserir{
+    background-color: #c3c3c3;
+}
+.estrutura.inserir .indicador{
+    left: 200px;
+    background-color: white;
+}
+body.inserir{
+    background-color: #e4e4e4;
+}
+body.inserir h1{
+    color: #000;
+}
